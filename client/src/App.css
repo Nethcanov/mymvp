@@ -1,14 +1,47 @@
-/* .App {
+* {
+  box-sizing: border-box;
+}
+
+img {
+/*  border */
+  border: 1px solid rgb(31, 28, 28); 
+  padding: 2px;
+  width: 250px;
+}
+
+/* Add hoover effect */
+.img:hoover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+
+
+
+
+/* 
+img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+} */
+
+
+/* 
+.App {
   text-align: center;
 }
 
 .App-logo {
+  animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
   pointer-events: none;
 }
 
+
+
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
+.App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
@@ -35,4 +68,4 @@
   to {
     transform: rotate(360deg);
   }
-} */
+}  */
