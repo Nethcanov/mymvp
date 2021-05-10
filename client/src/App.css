@@ -2,12 +2,27 @@
   box-sizing: border-box;
 }
 
-img {
+h1 {
+  display: grid;
+  padding: 50px;
+  padding-bottom: 50px;
+}
+.App {
+  display: grid;
+  /* position: absolute; */
+  margin-left: auto;
+  margin-right:auto;
+  grid-template-columns: repeat(2, 1fr);
+  padding-left: 70px;
+}
+.dataMap {
 /*  border */
   border: 1px solid rgb(31, 28, 28); 
   padding: 2px;
-  width: 250px;
+  width: 500px;
+  
 }
+
 
 /* Add hoover effect */
 .img:hoover {

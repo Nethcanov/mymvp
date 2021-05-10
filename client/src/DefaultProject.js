@@ -3,8 +3,9 @@ export default
 [
     {
         id: 1,
+        on: false,
         name: "Chili con carne",
-        url: 'https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/a0e2c09c-7fe1-47e5-b4df-bfa450a981e8/Derivates/40dc6435-5651-497e-9a69-3f30fa04c133.jpg',
+        url: 'https://img.jamieoliver.com/jamieoliver/recipe-database/46258212.jpg?tr=w-800,h-1066',
         prepTime: "Preparation time: 10 mins",
         cookTime: "Cooking time: 1 hour",
         level: "Level: easy",
@@ -13,6 +14,7 @@ export default
     },
     {
         id: 2,
+        on: false,
         name: "Minestrone soup",
         url: "https://img.jamieoliver.com/jamieoliver/recipe-database/105276769.jpg?tr=w-800,h-1066",
         prepTime: "Preparation time: 30 hour" ,
@@ -23,6 +25,7 @@ export default
     },
     {
         id: 3,
+        on: false,
         name: "Quickest white fish tagine",
         url: "https://img.jamieoliver.com/jamieoliver/recipe-database/109469720.jpg?tr=w-800,h-1066",
         prepTime: "Preparation time: 20 min" ,
@@ -33,6 +36,7 @@ export default
     },
     {
         id: 4,
+        on: false,
         name: "Quick green pasta",
         url: "https://img.jamieoliver.com/jamieoliver/recipe-database/105564455.jpg?tr=w-800,h-1066",
         prepTime: "Preparation time: 20 min" ,
@@ -43,6 +47,7 @@ export default
     },
     {
         id: 5,
+        on: false,
         name: "Classic ratatouille",
         url: "https://img.jamieoliver.com/jamieoliver/recipe-database/oldImages/large/1571_2_1437661403.jpg?tr=w-800,h-1066",
         prepTime: "Preparation time: 20 min" ,
@@ -53,6 +58,7 @@ export default
     },
     {
         id: 6,
+        on: false,
         name: "Silky squash risotto",
         url: "https://img.jamieoliver.com/jamieoliver/recipe-database/121936025.jpg?tr=w-800,h-1066",
         prepTime: "Preparation time: 15 min" ,
@@ -63,6 +69,7 @@ export default
     },
     {
         id: 7,
+        on: false,
         name: "Super spinach pancakes",
         url: "https://img.jamieoliver.com/jamieoliver/recipe-database/92507799.jpg?tr=w-800,h-1066",
         prepTime: "Preparation time: 10 min" ,
@@ -73,6 +80,7 @@ export default
     },
     {
         id: 8,
+        on: false,
         name: "Hot & sour chicken broth",
         url: "https://img.jamieoliver.com/jamieoliver/recipe-database/6ykh__U-KH5Bg3tceVILK3.jpg?tr=w-800,h-1066",
         prepTime: "Preparation time: 10 min" ,
@@ -83,6 +91,7 @@ export default
     },
     {
         id: 9,
+        on: false,
         name: "Perfect roast beef",
         url: "https://img.jamieoliver.com/jamieoliver/recipe-database/oldImages/large/389_1_1436872106.jpg?tr=w-800,h-1066",
         prepTime: "Preparation time: 25 min" ,
@@ -93,6 +102,7 @@ export default
     },
     {
         id: 10,
+        on: false,
         name: "Veg & lentil cottage pie",
         url: "https://img.jamieoliver.com/jamieoliver/recipe-database/oldImages/large/1547_2_1438867071.jpg?tr=w-800,h-1066",
         prepTime: "Preparation time: 30 min" ,
@@ -103,6 +113,29 @@ export default
     },
     {
         id: 11,
+        on: false,
+        name: "Broccoli & cheese pierogi",
+        url: "https://img.jamieoliver.com/jamieoliver/recipe-database/120357257.jpg?tr=w-800,h-1066",
+        prepTime: "Preparation time: 30 min" ,
+        cookTime: "Cooking time: 1 hour",
+        level: "Level: medium",
+        ingredients: "Ingredients:100 g self-raising flour, 1 large free-range egg, 1 head of broccoli, 25 g Cheddar cheese, ½ a bunch of chives, 1 tablespoon soured cream, 2 cloves of garlic, olive oil, 1 x 400 g tin of quality cherry tomatoes",
+        method: " 1. Mix the flour, egg and a pinch of sea salt until you have a smooth dough, adding a splash of water- if needed. 2. Knead on a flour-dusted surface for 2 minutes, then cover and pop into the fridge. 3. Trim the tough end off the broccoli stalk. Remove the florets, halving any larger ones, and chop the remaining stalk into 2cm chunks.  Put one third of the florets aside, then cook the rest with the chopped stalk in a pan of boiling water for 8 minutes. Drain and mash well, then finely grate in the cheese, finely chop the chives and add half, stir in the soured cream, season to perfection and leave to cool. 4. Peel and slice the garlic. 5. Divide the dough into eight, then roll out each piece into a 14cm circle, dusting with flour as you go. 6. Divide up the filling on one side of each circle. 7. Lightly brush the exposed pastry with water, then fold it over the filling, twisting along the edge to seal. 9. Put a frying pan on a medium heat with ½ a tablespoon of olive oil, the pierogi and the reserved broccoli florets. Pour in 1cm of boiling kettle water, cover and boil for 4 minutes. Uncover and fry the pierogi and broccoli on one side only for 4 minutes, or until the water has evaporated and the bases are golden. Meanwhile, put 1 teaspoon of oil and the garlic into the pan you used to boil your broccoli, stir until lightly golden, then pour in the tomatoes, simmer for 2 minutes and season to perfection. "
+    },
+    {
+        id: 12,
+        on: false,
+        name: "Mediterranean vegetable rice",
+        url: "https://img.jamieoliver.com/jamieoliver/recipe-database/94741165.jpg?tr=w-800,h-1066",
+        prepTime: "Preparation time: 15 min" ,
+        cookTime: "Cooking time: 30 min",
+        level: "Level: easy",
+        ingredients: "Ingredients: 300 g basmati rice, 1 small red onion, 1 courgette, 4 ripe mixed-colour tomatoes, 4 tablespoons green pesto, olive oil, 8 black olives, white wine vinegar, extra virgin olive oil, 4 sprigs of fresh basil, ½ x 125 g ball of mozzarella cheese ",
+        method: "1. Preheat the grill to high. Tip the rice into a 25cm x 35cm roasting tray, pour over 650ml of boiling salted water and cook over a medium heat for 12 minutes, stirring occasionally, then turn off the heat. 2. Peel the red onion, then very finely slice with the courgette. Finely slice the tomatoes into rounds. 3. Randomly bomb the pesto over the rice, then start layering up your veg: cover the rice with rounds of onion, then move on to a layer of courgettes, overlapping them as you go, followed by a layer of tomatoes. Repeat, moving slightly nearer the middle each time until you’ve covered the whole surface. 4. Drizzle with 2 tablespoons of olive oil and sprinkle with black pepper, then place under the grill on the middle shelf for 25 minutes, or until beautifully gratinated. 5. For the tapenade- finely chop the olives, then mix with ½ a tablespoon each of vinegar and extra virgin olive oil. 6. To serve, pick over the basil leaves, dot over the olive tapenade and delicately tear over the mozzarella."
+    },
+    {
+        id: 13,
+        on: false,
         name: "Spaghetti Bolognese",
         url: "https://img.jamieoliver.com/jamieoliver/recipe-database/80307052.jpg?tr=w-800,h-1066",
         prepTime: "Preparation time: 15 min" ,
@@ -112,27 +145,8 @@ export default
         method: " 1. Preheat the oven to 180ºC. 2. Peel and finely chop the garlic and onions, pick and finely chop the rosemary, then finely slice the bacon. 3. Heat a splash of oil in a casserole pan on a medium heat, add the bacon, rosemary, garlic and onion and cook for 5 minutes, stirring occasionally. 4. Add the minced beef, breaking it apart, then cook for 2 to 3 minutes, or until starting to brown, then pour in the wine. Leave to bubble and cook away. 5. Meanwhile, drain and tip the sun-dried tomatoes into a food processor, blitz to a paste, then add to the pan with the tomatoes. Stir well, break the plum tomatoes apart a little. 6. Cover with a lid then place in the oven for 1 hour, removing the lid and giving it a stir after 30 minutes – if it looks a little dry at this stage, add a splash of water to help it along. 7. About 10 minutes before the time is up, cook the spaghetti in boiling salted water according to the packet instructions 8. Once the spaghetti is cooked, drain, reserving a mugful of cooking water, then return to the pan with a few spoons of Bolognese, a good grating of Parmesan and a drizzle of extra virgin olive oil. 9. Toss to coat the spaghetti, loosening with a splash of cooking water, if needed. Serve, enjoy!."
     },
     {
-        id: 12,
-        name: "Classic schnitzel",
-        url: "https://images.kitchenstories.io/recipeImages/RP09_20_07_ClassicSchnitzel_TitlePicture/RP09_20_07_ClassicSchnitzel_TitlePicture-large-landscape-150.jpg",
-        prepTime: "Preparation time: 10 min" ,
-        cookTime: "Cooking time: 20 min",
-        level: "Level: easy",
-        ingredients: "Ingredients: 500 g veal, 4 eggs, 100 ml milk, 200 g flour, 200 g breadcrumbs, 1 lemon, butter for frying ",
-        method: "1. In a large bowl, whisk together eggs and milk. 2. Cut veal into approx. two finger thick butterflied portions. 3. Beat out the veal as thinly as possible without making holes in it. 4. Season cutlets with salt and pepper. Dredge each piece in flour and afterwards in the egg mixture. Set aside. 5. Next, dredge the cutlets in breadcrumbs. 6. In a frying pan, fry schnitzel in some butter over medium heat until golden brown and crispy. Season once more with salt. Serve with a lemon wedge and enjoy with some homemade potato salad!"
-    },
-    {
-        id: 13,
-        name: "Polish Beef Roulade (Zrazy)",
-        url: "https://www.thespruceeats.com/thmb/vkTIOIcT9P4rUMSOjvR2gtlxg4g=/960x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-93225947-582b27c63df78c6f6a8eb3cc.jpg",
-        prepTime: "Preparation time: 30 min" ,
-        cookTime: "Cooking time: 1 hour",
-        level: "Level: medium",
-        ingredients: "Ingredients: 8 sandwich steaks, 1 tablespoon grainy mustard, 2 dill pickles, 4 ounces ham, 2 green onions, 4 tablespoons canola oil, 2 tablespoons all-purpose flour, 1 cup beef stock, 4 tablespoons white wine, 1 tablespoon tomato paste, salt and pepper, Garnish: sour cream, chopped parsley ",
-        method: " 1. Spread a thin layer of mustard on each steak and divide the pickles, ham, and onion among the steaks. Fold in the sides and roll like stuffed cabbage. Secure with a toothpick, if necessary. 2. Heat oil in a large Dutch oven and brown beef rolls on all sides. Remove meat and reserve. 3. Add flour to the pan and cook until light brown to make a roux. Stir in the stock, wine, tomato paste, salt, and pepper. Bring to a boil and simmer 1 minute. 4. Return beef rolls to the pan and spoon over some of the sauce. Cover and cook on low 45 minutes to 1 hour, adding more liquid as necessary during cooking. 5. When the rolls are cooked, transfer to a serving dish and remove the toothpicks, if used, and ladle over the sauce. Dollop with sour cream and chopped parsley. 6. Serve with rice, mashed potatoes, finger dumplings, or drop potato dumplings. "
-    },
-    {
         id: 14,
+        on: false,
         name: "Classic kartoffelpuffer- potato pancakes",
         url: "https://www.daringgourmet.com/wp-content/uploads/2017/10/Kartoffelpuffer-12.jpg",
         prepTime: "Preparation time: 15 min" ,
@@ -143,12 +157,24 @@ export default
     },
     {
         id: 15,
+        on: false,
         name: "Polish ”Kopytka” – whole wheat dumplings with sauerkraut and honey. ",
-        url: "https://i2.wp.com/tasteisyours.com/wp-content/uploads/2019/03/IMG_7209.jpg?fit=2048%2C1365&ssl=1",
+        url: "https://img.jamieoliver.com/home/wp-content/uploads/features-import/2014/10/feature-header20.jpg",
         prepTime: "Preparation time: 10 min" ,
         cookTime: "Cooking time: 15 min",
         level: "Level: easy",
         ingredients: "Ingredients: 2 cups mashed potatoes cold, 1 large egg 1 cup all-purpose flour",
         method: " 1. Place mashed potatoes in a mixing bowl. They should be cold, so this is a great way to use up leftover potatoes. 2. Add egg and flour and mix until the dough comes together. Place dough onto a floured surface and divide into two parts. Roll one part of the dough into a long log and slice into 1.5 to 2 dumplings. 3. In a large saucepan or pot, boil water and add 1 teaspoon of salt. Add 5 to 8 dumplings at a time to the boiling water and cook until they start to float at the top. Remove and place on a plate. Repeat with remaining dumplings. 4. You can serve the dumplings right away as a side dish or follow the suggestion below. 5. In a skillet, heat up 1 tablespoon of olive oil and 1 tablespoon of butter. Add cooked dumplings and cook until golden brown. Remove onto a plate. Add 2 minced garlic cloves, 1 small yellow onion, chopped, 4 slices of bacon,chopped, and 4 white mushrooms, washed, sliced. Saute until fragrant and the bacon is crispy. Toss with dumplings and serve."
+    },
+    {
+        id: 16,
+        on: false,
+        name: "Spicy 'nduja vongole",
+        url: "https://img.jamieoliver.com/jamieoliver/recipe-database/64975493.jpg?tr=w-800,h-1066",
+        prepTime: "Preparation time: 10 min" ,
+        cookTime: "Cooking time: 15 min",
+        level: "Level: easy",
+        ingredients: "Ingredients: 150 g dried linguine, 500 g clams- scrubbed, 20 g higher-welfare ’nduja, ½ a bunch of fresh flat-leaf parsley, 100 ml light rosé wine",
+        method: " 1. Cook the pasta in a pan of boiling salted water according to the packet instructions, draining 1 minute early and reserving a mugful of cooking water. 2. Meanwhile, sort through the clams. 3. Tear the ’nduja into a large cold non-stick frying pan, add 1 tablespoon of olive oil, place on a medium heat and let the ’nduja melt while you finely chop the parsley. 4. Stir most of the parsley into the ’nduja pan with the clams and rosé, and put the lid on. 5. After 3 or 4 minutes the clams will start to open – keep jiggling the pan until they’ve all opened, then remove from the heat, discarding any unopened clams. 6. Toss the drained pasta into the clam pan with a splash of reserved cooking water and simmer for 1 minute. Taste and season to perfection with sea salt and black pepper, if needed. 7. Dish up, drizzle with a little extra virgin olive oil and scatter over the remaining parsley, and tuck in."
     },
 ];
