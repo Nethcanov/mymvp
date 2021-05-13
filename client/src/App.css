@@ -6,6 +6,7 @@ h1 {
   display: grid;
   padding: 50px;
   padding-bottom: 50px;
+  font-family: Monospace; 
 }
 .App {
   display: grid;
@@ -14,73 +15,35 @@ h1 {
   margin-right:auto;
   grid-template-columns: repeat(2, 1fr);
   padding-left: 70px;
-}
-.dataMap {
-/*  border */
-  border: 1px solid rgb(31, 28, 28); 
-  padding: 2px;
-  width: 500px;
-  
+  font-family: Monospace; 
 }
 
+/*  border */
+.dataMap {
+  padding: 2px;
+  width: 500px;
+  font-family: Monospace; 
+  border: 1px solid rgb(83, 80, 90); 
+}
+
+.button {
+  color: rgb(125, 113, 148);  ;
+  background:  rgb(125, 113, 148);  ;
+  padding-left: 70px;
+}
+
+.basicButton {
+  color:rgb(125, 113, 148);
+  background-color: rgb(125, 113, 148); 
+  border: none;
+  color: rgb(8, 8, 8);
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 16px;
+}
 
 /* Add hoover effect */
 .img:hoover {
-  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+  box-shadow: 0 0 2px 1px rgb(125, 113, 148); 
+  padding-left: 70px;
 }
-
-
-
-
-
-/* 
-img {
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  padding: 5px;
-  width: 150px;
-} */
-
-
-/* 
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-
-
-@media (prefers-reduced-motion: no-preference) {
-.App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}  */
