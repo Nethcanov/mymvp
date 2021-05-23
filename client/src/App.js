@@ -12,11 +12,9 @@ function App () {
 
   const [data, setData] = useState(DefaultRecipes); // get all data from DefaultProjects
  
-  
-
   return (   
     <div className="App">
-    <nav className="navbar navbar-expand-sm navbar-dark" style={{ backgroundColor: 'rgb(167, 187, 217)' }}>
+    <nav className="navbar navbar-expand-sm navbar-dark" style={{ backgroundColor: 'rgb(153, 133, 36)' }}>
         {/* "Brand"/Logo */}
         <a className="navbar-brand" href="brand"><strong>Food!</strong></a>
        
