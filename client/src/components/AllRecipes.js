@@ -9,15 +9,16 @@ function AllRecipes(props){
     return (
 
         <div className="AllRecipes">
+            {/* <h1>Click on a Jamie Oliver recipe to view the ingredients and cooking instructions</h1> */}
       
             { data ? 
                 <div className="row">
                     {data.map(r => (
-                        <div className="col-sm-6 col-md-4 col-lg-3 mb-3" key={r.data.id.toString()}>
+                        <div className="col-sm-6 col-md-4 col-lg-3 mb-3" key={r.id.toString()}>
                             <Card> 
-                            <CardTitle tag="h5">{r.data.name}</CardTitle> 
+                            <CardTitle tag="h5">{r.name}</CardTitle> 
 
-                                <CardImg  img src={r.data.url} alt="Card image cap" height= "200"/>
+                                <CardImg img src={r.url} alt="Card image cap" height= "200"/>
 
                             <Button className="Button">Open Recipe</Button>
                             </Card>

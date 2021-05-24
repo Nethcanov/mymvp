@@ -10,7 +10,7 @@ import FeaturedRecipe from "./components/FeaturedRecipe";
 
 function App () {
 
-  const [data, setData] = useState(DefaultRecipes); // get all data from DefaultProjects
+  const [recipes, setRecipes] = useState(DefaultRecipes); // get all data from DefaultProjects
  
   return (   
     <div className="App">
@@ -42,7 +42,7 @@ function App () {
       </Route>
 
       <Route path="/all-recipes" >
-        <AllRecipes />
+        <AllRecipes data={recipes}/>
         
       </Route>
 
