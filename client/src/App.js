@@ -10,7 +10,27 @@ import FeaturedRecipe from "./components/FeaturedRecipe";
 
 function App () {
 
-  const [recipes, setRecipes] = useState(DefaultRecipes); // get all data from DefaultProjects
+  const [ recipes, setRecipes ] = useState(DefaultRecipes); 
+  const [ chosenRecipe, setChosenRecipe ] = useState([]);
+
+  const addFeaturedRecipe = (id) => {
+    // find recipe with given id
+    if(recipes !== null){
+      // alert("Recipe Clicked On");// to test - works
+      let recipe = recipes.filter(fr => (fr.id === id));
+      let newRecipe = {
+        id: recipe[0].id + "x",
+        title: recipe[0].name,
+        prepTime: recipe[0].prepTime,
+        cookTime: recipe[0].cookTime,
+        level: recipe[0].level,
+        ingredients: recipe[0].ingredients,
+        method: recipe[0].method,
+        image: recipe[0].url
+      }
+      setChosenRecipe(newRecipe);
+    }
+  } 
  
   return (   
     <div className="App">
@@ -27,9 +47,9 @@ function App () {
         {   /* Menu Items */}
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div className="navbar-nav">
-            <a className="nav-link active" href="/">Home <span className="sr-only">(current)</span></a>
-              <Link className="nav-link" to="/all-recipes/">All Recipes</Link>
-              <Link className="nav-link" to="/featured-recipe">Ingredients and Method</Link>
+            <Link className="nav-link active" to="/">Home <span className="sr-only">(current)</span></Link>
+            <Link className="nav-link" to="/all-recipes/">All Recipes</Link>
+            <Link className="nav-link" to="/featured-recipe">Ingredients and Method</Link>
             </div>
         </div>
           
@@ -40,15 +60,13 @@ function App () {
       <Route path="/" exact >
         <Home />
       </Route>
-
+    
       <Route path="/all-recipes" >
-        <AllRecipes data={recipes}/>
-        
+        {recipes && <AllRecipes data={recipes} getRecipeCb={(recipe) => addFeaturedRecipe(recipe)}/>}
       </Route>
 
       <Route path="/featured-recipe" >
-        <FeaturedRecipe />
-        
+        {chosenRecipe && <FeaturedRecipe recipeData={chosenRecipe}/>}
       </Route>
     
       </Switch>

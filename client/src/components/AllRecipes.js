@@ -17,11 +17,12 @@ function AllRecipes(props){
                     {data.map(r => (
                         <Col lg="3" sm="4" xs="6" key={r.id.toString()}>
                             <Card> 
-                            <CardTitle tag="h5">{r.name}</CardTitle> 
+                                <CardTitle tag="h5">{r.name}</CardTitle> 
 
-                                <CardImg img src={r.url} alt="Card image cap" height= "200"/>
+                                <CardImg img src={r.url} alt="Card image cap" height= "200" width="200" alt={r.title}/>
 
-                            <Button className="Button">Open Recipe</Button>
+                                <Button className="Button" onClick={(e) => props.getRecipeCb(r.id)} >Open Recipe</Button>
+                            
                             </Card>
                         </Col>
                     ))}
