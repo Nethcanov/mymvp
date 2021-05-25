@@ -215,7 +215,7 @@ export default
          "3. Season to taste with sea salt and black pepper, then add the tomato purée. Scrub the sweet potato clean, then coarsely grate it into a bowl, toss with a little oil and a good few gratings of Parmesan. ",
          "4. Transfer the filling to a 15cm x 20cm ovenproof dish and sprinkle with the sweet potato. Bake for 15 to 20 minutes, or until the potato topping is golden and cooked through and the filling is piping hot."]
     },
-    /*
+    
     {
         id: 11,
         on: false,
@@ -338,5 +338,4 @@ export default
          "6. Toss the drained pasta into the clam pan with a splash of reserved cooking water and simmer for 1 minute. Taste and season to perfection with sea salt and black pepper, if needed. ",
          "7. Dish up, drizzle with a little extra virgin olive oil and scatter over the remaining parsley, and tuck in."]
     },
-    */
 ];

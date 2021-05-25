@@ -55,6 +55,9 @@ function App () {
           
     </nav>
 
+    {/* <div className="background"></div> */}
+
+
     <Switch>
 
       <Route path="/" exact >
@@ -71,7 +74,7 @@ function App () {
     
       </Switch>
 
-      <footer className="footer text-center p-3 mt-3 bg-secondary text-light"  >
+      <footer className="footer text-center p-3 mt-3 text-light" style={{ backgroundColor: 'rgb(168, 162, 163)' }} >
         Original Concept by Paulina Brozek Modified by Jacosta von Achten
       </footer>
     
