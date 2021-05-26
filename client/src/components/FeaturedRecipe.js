@@ -15,46 +15,40 @@ function FeaturedRecipe (props) {
   return (
     <div className="FeaturedRecipe">
       { chosen && ingredients && method ? 
-      <Container className="featuredRecipeCard">
+        <Container className="featuredRecipeCard">
           {
             <Card width="" height="">
-            <CardBody key={chosen.id}>
-            <Row><CardTitle className="title" tag="h1">{chosen.title}</CardTitle></Row>
-            <Row>
-              <Col lg="6" sm="4" xs="6" >
-                <CardSubtitle  className="level" tag="h3">{chosen.level}</CardSubtitle>
-                <CardText  className="ptime" tag="h4">{chosen.prepTime}</CardText>
-                <CardText  className="ctime" tag="h4">{chosen.cookTime}</CardText>
+              <CardBody key={chosen.id}>
+                <Row><CardTitle className="title" tag="h1">{chosen.title}</CardTitle></Row>
+                <Row>
+                  <Col lg="6" sm="4" xs="6" >
+                    <CardSubtitle  className="level" tag="h3">{chosen.level}</CardSubtitle>
+                    <CardText  className="ptime" tag="h4">{chosen.prepTime}</CardText>
+                    <CardText  className="ctime" tag="h4">{chosen.cookTime}</CardText>
+                    <List className="ingredients">
+                      <ul>
+                        {ingredients.map(i => <li key={i}>{i}</li>)}
+                      </ul>
+                    </List>
+                  </Col>
 
-                <List className="ingredients">
-                <ul>
-                  {ingredients.map(i => <li key={i}>{i}</li>)}
-                </ul>
-              </List>
+                  <Col lg="6" sm="4" xs="6">
+                    <CardImg className="food-image" img src={chosen.image} />
+                  </Col>
+                </Row>
 
-              
-              </Col>
-
-              <Col lg="6" sm="4" xs="6">
-                <CardImg className="food-image" img src={chosen.image} />
-              </Col>
-              </Row>
-
-              <List className="method">
-                <ol>
-                  {method.map(m => <li key={m}>{m}</li>)}
-                </ol>
-              </List>
-              <Link to="/all-recipes" className="back-to-all-recipes" >Go Back to Recipes</Link>
-            </CardBody>
-            
+                <List className="method">
+                  <ol>
+                    {method.map(m => <li key={m}>{m}</li>)}
+                  </ol>
+                </List>
+                <Link to="/all-recipes" className="back-to-all-recipes" >Go Back to Recipes</Link>
+              </CardBody>
             </Card>
           }
-        
-      </Container>
-  : <h1 style={{ color: 'rgb(153, 133, 36)' , marginTop: 50 +"px" }}>Please Go Back to All Recipes and Choose Something to Cook</h1> 
-   
-  }
+        </Container>
+        : <h1 style={{ color: 'rgb(153, 133, 36)' , marginTop: 50 +"px" }}>Please Go Back to All Recipes and Choose Something to Cook</h1> 
+      }
     </div>
              
   )

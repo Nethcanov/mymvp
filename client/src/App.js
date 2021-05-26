@@ -6,12 +6,14 @@ import './App.css';
 import Home from "./components/Home";
 import AllRecipes from "./components/AllRecipes";
 import FeaturedRecipe from "./components/FeaturedRecipe";
+import { useHistory } from 'react-router-dom';
 
 
 function App () {
 
   const [ recipes, setRecipes ] = useState(DefaultRecipes); 
   const [ chosenRecipe, setChosenRecipe ] = useState([]);
+  const history = useHistory();
 
   const addFeaturedRecipe = (id) => {
     // find recipe with given id
@@ -29,6 +31,7 @@ function App () {
         image: recipe[0].url
       }
       setChosenRecipe(newRecipe);
+      history.push('/featured-recipe');
     }
   } 
   // class = "navbar-nav ml-auto"
@@ -48,7 +51,7 @@ function App () {
         {   /* Menu Items */}
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div className="navbar-nav ml-auto">
-            <Link className="nav-link active" to="/">Home <span className="sr-only">(current)</span></Link>
+            <Link className="nav-link" to="/">Home <span className="sr-only">(current)</span></Link>
             <Link className="nav-link" to="/all-recipes/">All Recipes</Link>
             <Link className="nav-link" to="/featured-recipe">Ingredients and Method</Link>
             </div>
@@ -58,6 +61,8 @@ function App () {
   
 
     {/* <div className="background"></div> */}
+
+    <div className="bg "></div>
 
     <div className="switch">
       <Switch>
