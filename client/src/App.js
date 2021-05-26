@@ -34,6 +34,7 @@ function App () {
  
   return (   
     <div className="App">
+      
     <nav className="navbar navbar-expand-sm navbar-dark" style={{ backgroundColor: 'rgb(153, 133, 36)' }}>
         {/* "Brand"/Logo */}
         <a className="navbar-brand" href="brand"><strong>Food!</strong></a>

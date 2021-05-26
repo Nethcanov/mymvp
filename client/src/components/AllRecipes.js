@@ -1,10 +1,11 @@
 import React from "react";
 import { Container, Row, Col, Button,  Card } from 'reactstrap';
 import {CardImg,  CardTitle, CardText } from 'reactstrap';
-// onClick={() => getRecipe(data.id)} style={{ marginBottom: '1rem' }} 
+
 function AllRecipes(props){
 
     let data = props.data;
+
     
     return (
 
@@ -12,7 +13,7 @@ function AllRecipes(props){
             {/* <h1>Click on a Jamie Oliver recipe to view the ingredients and cooking instructions</h1> */}
       
             { data ? 
-                <Container>
+                <Container className="allRecipeCards">
                 <Row>
                     {data.map(r => (
                         <Col lg="3" sm="4" xs="6" key={r.id}>
