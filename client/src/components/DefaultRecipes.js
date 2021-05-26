@@ -282,7 +282,7 @@ const DefaultRecipes = [
     {
         id: 14,
         on: false,
-        name: "Classic kartoffelpuffer- potato pancakes",
+        name: "Kartoffelpuffer- potato pancakes",
         url: "https://www.daringgourmet.com/wp-content/uploads/2017/10/Kartoffelpuffer-12.jpg",
         prepTime: "Preparation time: 15 min" ,
         cookTime: "Cooking time: 10 min",
@@ -304,15 +304,18 @@ const DefaultRecipes = [
     {
         id: 15,
         on: false,
-        name: "Polish ”Kopytka” – whole wheat dumplings with sauerkraut and honey. ",
+        name: "'Kopytka' – Polish dumplings",
         url: "https://img.jamieoliver.com/home/wp-content/uploads/features-import/2014/10/feature-header20.jpg",
-        prepTime: "Preparation time: 10 min" ,
-        cookTime: "Cooking time: 15 min",
+        prepTime: "Preparation time: 30 min" ,
+        cookTime: "Cooking time: 10 min",
         level: "Level: easy",
-        ingredients: [ "2 cups mashed potatoes cold, ", "1 large egg, ", "1 cup all-purpose flour"],
+        ingredients: [ "500g potatoes, peeled, e.g Maris Piper, or a heritage potato, ", "250g plain flour, plus extra for dusting, ",
+         "1 egg, beaten", "Sea salt and ground black pepper", "Vegetable or olive oil", "Butter", "1 large sweet onion, finely chopped",
+        "200g chanterelle mushrooms (or use porcini, or chestnut mushrooms)" ],
         method: [
-         "Place mashed potatoes in a mixing bowl. They should be cold, so this is a great way to use up leftover potatoes. ",
-         "Add egg and flour and mix until the dough comes together. Place dough onto a floured surface and divide into two parts. Roll one part of the dough into a long log and slice into 1.5 to 2 dumplings. ",
+         "Boil the potatoes in a large pan of salted water until very soft. Drain and set to one side to cool down and steam dry. Once cool, mash until smooth.",
+         "Place mashed potatoes in a mixing bowl.",
+         "Add the flour, egg and a good pinch of salt and pepper. Using a metal spoon, bring the mixture together. Place dough onto a floured surface and divide into four parts. Roll one part of the dough into a long log and slice into 1.5 to 2 inch dumplings. ",
          "In a large saucepan or pot, boil water and add 1 teaspoon of salt. Add 5 to 8 dumplings at a time to the boiling water and cook until they start to float at the top. Remove and place on a plate. Repeat with remaining dumplings. ",
          "You can serve the dumplings right away as a side dish or follow the suggestion below. ",
          "In a skillet, heat up 1 tablespoon of olive oil and 1 tablespoon of butter. Add cooked dumplings and cook until golden brown. Remove onto a plate. Add 2 minced garlic cloves, 1 small yellow onion, chopped, 4 slices of bacon,chopped, and 4 white mushrooms, washed, sliced. Saute until fragrant and the bacon is crispy. Toss with dumplings and serve."]

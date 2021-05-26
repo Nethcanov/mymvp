@@ -31,10 +31,11 @@ function App () {
       setChosenRecipe(newRecipe);
     }
   } 
- 
+  // class = "navbar-nav ml-auto"
   return (   
     <div className="App">
-    <nav className="navbar navbar-expand-sm navbar-dark" style={{ backgroundColor: 'rgb(153, 133, 36)' }}>
+    
+    <nav className="navbar navbar-expand-sm navbar-dark" style={{ backgroundColor: 'rgb(153, 133, 36)', position: "sticky" }}>
         {/* "Brand"/Logo */}
         <a className="navbar-brand" href="brand"><strong>Food!</strong></a>
        
@@ -46,7 +47,7 @@ function App () {
 
         {   /* Menu Items */}
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div className="navbar-nav">
+            <div className="navbar-nav ml-auto">
             <Link className="nav-link active" to="/">Home <span className="sr-only">(current)</span></Link>
             <Link className="nav-link" to="/all-recipes/">All Recipes</Link>
             <Link className="nav-link" to="/featured-recipe">Ingredients and Method</Link>
@@ -54,26 +55,27 @@ function App () {
         </div>
           
     </nav>
+  
 
     {/* <div className="background"></div> */}
 
+    <div className="switch">
+      <Switch>
 
-    <Switch>
+        <Route path="/" exact >
+          <Home />
+        </Route>
+      
+        <Route path="/all-recipes" >
+          {recipes && <AllRecipes data={recipes} getRecipeCb={(recipe) => addFeaturedRecipe(recipe)} />}
+        </Route>
 
-      <Route path="/" exact >
-        <Home />
-      </Route>
-    
-      <Route path="/all-recipes" >
-        {recipes && <AllRecipes data={recipes} getRecipeCb={(recipe) => addFeaturedRecipe(recipe)}/>}
-      </Route>
-
-      <Route path="/featured-recipe" >
-        {chosenRecipe && <FeaturedRecipe recipeData={chosenRecipe}/>}
-      </Route>
-    
-      </Switch>
-
+        <Route path="/featured-recipe" >
+          {chosenRecipe && <FeaturedRecipe recipeData={chosenRecipe}/>}
+        </Route>
+      
+        </Switch>
+      </div>
       <footer className="footer text-center p-3 mt-3 text-light" style={{ backgroundColor: 'rgb(189, 185, 175)' }} >
         Original Concept by Paulina Brozek Modified by Jacosta von Achten
       </footer>

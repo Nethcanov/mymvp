@@ -1,32 +1,30 @@
 import React from "react";
 import { Container, Row, Col, Button,  Card } from 'reactstrap';
 import {CardImg,  CardTitle } from 'reactstrap';
+import "./AllRecipes.css";
+// import { Redirect } from 'react-router-dom';
+{/* <Redirect from='/all-recipes/' to="/featured-recipe/" /> */}
+
 
 function AllRecipes(props){
 
     let data = props.data;
 
-    
     return (
 
-        <div className="AllRecipes">
-            {/* <h1>Click on a Jamie Oliver recipe to view the ingredients and cooking instructions</h1> */}
-      
+        <div className="AllRecipes">   
             { data ? 
                 <Container className="allRecipeCards">
-                <Row>
+                <Row className="card-rows" height= "280px">
                     {data.map(r => (
                         <Col lg="3" sm="4" xs="6" key={r.id}>
-                            <Card width="16rem" height="28rem"> 
-                                <CardTitle tag="h6">{r.name}</CardTitle> 
-
-                                <CardImg img src={r.url} alt="Card image cap" height= "200" width="200" alt={r.title}/>
-                                <Button className="Button" onClick={(e) => props.getRecipeCb(r.id)} >Open Recipe</Button>
-                            
+                            <Card className="recipe-card" > 
+                                <CardTitle className="recipe-title" tag="h6">{r.name}</CardTitle> 
+                                <CardImg className="image" img src={r.url} alt="Card image cap" alt={r.title}/>
+                                <Button className="Button" onClick={(e) => props.getRecipeCb(r.id)}>Open Recipe</Button>
                             </Card>
                         </Col>
                     ))}
-
                 </Row>
                 </Container>
             : <h1>You have no recipes!</h1>

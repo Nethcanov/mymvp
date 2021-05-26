@@ -1,0 +1,9 @@
+.recipe-card {
+  margin-bottom: 15px; 
+}
+.recipe-title {
+ text-align: center;
+}
+.image {
+    height: 220px;
+}

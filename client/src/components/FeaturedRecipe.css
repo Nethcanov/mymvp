@@ -1,13 +1,34 @@
+.title {
+    padding-left: 75px;
+    padding-right: 100px;
+}
+.level {
+    padding-top: 25px;
+    padding-bottom: 12px;
+    padding-left: 75px;
+    text-align: left;
+}
+.ptime {
+    padding-bottom: 5px;
+    padding-left: 75px;
+    text-align: left;
+}
+.ctime {
+    padding-bottom: 5px;
+    padding-left: 75px;
+    text-align: left;
+}
 .ingredients {
     text-align: left;
 }
 .method {
     text-align: left;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 .food-image {
     height: 500px;
-    padding-right: 20px;
+    padding-right: 50px;
     margin-top: 30px;
-    margin-bottom: 30px;
-    
+    margin-bottom: 30px; 
 }

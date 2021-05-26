@@ -1,8 +1,9 @@
+// import { Button } from "bootstrap";
 import React from "react";
 import { Link } from 'react-router-dom';
 import { Container, CardBody, Card, Row, Col } from 'reactstrap';
 import { CardImg, CardText, CardTitle, CardSubtitle} from 'reactstrap';
-// import { ListGroup, ListGroupItem} from 'reactstrap';
+import { List } from 'reactstrap';
 import "./FeaturedRecipe.css";
 
 function FeaturedRecipe (props) {
@@ -18,19 +19,20 @@ function FeaturedRecipe (props) {
           {
             <Card width="" height="">
             <CardBody key={chosen.id}>
-              <Row>
+            <Row><CardTitle className="title" tag="h1">{chosen.title}</CardTitle></Row>
+            <Row>
               <Col lg="6" sm="4" xs="6" >
-                <CardTitle tag="h2">{chosen.title}</CardTitle>
-                <CardSubtitle tag="h3">{chosen.level}</CardSubtitle>
-                <CardText tag="h3">{chosen.prepTime}{chosen.CookTime}</CardText>
+                <CardSubtitle  className="level" tag="h3">{chosen.level}</CardSubtitle>
+                <CardText  className="ptime" tag="h4">{chosen.prepTime}</CardText>
+                <CardText  className="ctime" tag="h4">{chosen.cookTime}</CardText>
 
-                <div className="ingredients">
+                <List className="ingredients">
                 <ul>
                   {ingredients.map(i => <li key={i}>{i}</li>)}
                 </ul>
-              </div>
+              </List>
 
-              <Link to="/all-recipes" className="back-to-all-recipes" >Go Back to Recipes</Link>
+              
               </Col>
 
               <Col lg="6" sm="4" xs="6">
@@ -38,23 +40,20 @@ function FeaturedRecipe (props) {
               </Col>
               </Row>
 
-              <div className="method">
+              <List className="method">
                 <ol>
                   {method.map(m => <li key={m}>{m}</li>)}
                 </ol>
-              </div>
-              
+              </List>
+              <Link to="/all-recipes" className="back-to-all-recipes" >Go Back to Recipes</Link>
             </CardBody>
-            
-            
-            
             
             </Card>
           }
         
       </Container>
   : <h1 style={{ color: 'rgb(153, 133, 36)' , marginTop: 50 +"px" }}>Please Go Back to All Recipes and Choose Something to Cook</h1> 
-  
+   
   }
     </div>
              
