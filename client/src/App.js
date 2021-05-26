@@ -34,7 +34,6 @@ function App () {
  
   return (   
     <div className="App">
-      
     <nav className="navbar navbar-expand-sm navbar-dark" style={{ backgroundColor: 'rgb(153, 133, 36)' }}>
         {/* "Brand"/Logo */}
         <a className="navbar-brand" href="brand"><strong>Food!</strong></a>
@@ -75,7 +74,7 @@ function App () {
     
       </Switch>
 
-      <footer className="footer text-center p-3 mt-3 text-light" style={{ backgroundColor: 'rgb(168, 162, 163)' }} >
+      <footer className="footer text-center p-3 mt-3 text-light" style={{ backgroundColor: 'rgb(189, 185, 175)' }} >
         Original Concept by Paulina Brozek Modified by Jacosta von Achten
       </footer>
     

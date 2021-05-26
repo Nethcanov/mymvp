@@ -1,1 +1,13 @@
-
+.ingredients {
+    text-align: left;
+}
+.method {
+    text-align: left;
+}
+.food-image {
+    height: 500px;
+    padding-right: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+}

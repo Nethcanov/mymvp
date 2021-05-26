@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col, Button,  Card } from 'reactstrap';
-import {CardImg,  CardTitle, CardText } from 'reactstrap';
+import {CardImg,  CardTitle } from 'reactstrap';
 
 function AllRecipes(props){
 
