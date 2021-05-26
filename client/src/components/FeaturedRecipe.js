@@ -26,7 +26,8 @@ function FeaturedRecipe (props) {
                     <CardText  className="ptime" tag="h4">{chosen.prepTime}</CardText>
                     <CardText  className="ctime" tag="h4">{chosen.cookTime}</CardText>
                     <List className="ingredients">
-                      <ul>
+                      <CardSubtitle tag="h3"><strong>Ingredients:</strong></CardSubtitle>
+                      <ul className="ing-list">
                         {ingredients.map(i => <li key={i}>{i}</li>)}
                       </ul>
                     </List>
@@ -38,11 +39,12 @@ function FeaturedRecipe (props) {
                 </Row>
 
                 <List className="method">
+                <CardSubtitle tag="h3"><strong>Method:</strong></CardSubtitle>
                   <ol>
                     {method.map(m => <li key={m}>{m}</li>)}
                   </ol>
                 </List>
-                <Link to="/all-recipes" className="back-to-all-recipes" >Go Back to Recipes</Link>
+                <Link to="/all-recipes" className="back-to-all-recipes" ><strong>Go Back to Recipes</strong></Link>
               </CardBody>
             </Card>
           }

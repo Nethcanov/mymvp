@@ -1,6 +1,11 @@
+.featuredRecipeCard {
+    padding-bottom: 25px;
+}
+
 .title {
     padding-left: 75px;
     padding-right: 100px;
+    font-weight: bold;
 }
 .level {
     padding-top: 25px;
@@ -19,7 +24,12 @@
     text-align: left;
 }
 .ingredients {
+    padding-top: 25px;
+    padding-left: 75px;
     text-align: left;
+}
+.ing-list {
+    padding-top: 15px;
 }
 .method {
     text-align: left;
