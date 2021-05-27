@@ -1,13 +1,18 @@
 .allRecipeCards {
-    padding-bottom: 25px;
+    /* padding-bottom: 2.5em; */
     font-family: monospace;
 }
+
 .recipe-card {
-  margin-bottom: 15px; 
+    max-height: 80vh;
+    margin-bottom: 1em; 
 }
 .recipe-title {
- text-align: center;
+    text-align: left;
+    min-height: 10vh;
 }
+
 .image {
-    height: 220px;
+    min-height: 40vh;
+    max-height: 40vh;
 }

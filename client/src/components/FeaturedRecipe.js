@@ -2,9 +2,11 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 import { Container, CardBody, Card, Row, Col } from 'reactstrap';
-import { CardImg, CardText, CardTitle, CardSubtitle} from 'reactstrap';
+import { CardImg, CardText, CardSubtitle, CardHeader} from 'reactstrap';
 import { List } from 'reactstrap';
 import "./FeaturedRecipe.css";
+
+// .col-auto - variable width content
 
 function FeaturedRecipe (props) {
 
@@ -19,31 +21,38 @@ function FeaturedRecipe (props) {
           {
             <Card width="" height="">
               <CardBody key={chosen.id}>
-                <Row><CardTitle className="title" tag="h1">{chosen.title}</CardTitle></Row>
+                <CardHeader className="title" tag="h1">{chosen.title}</CardHeader>
                 <Row>
-                  <Col lg="6" sm="4" xs="6" >
+
+                  <Col className="image-col" lg="6" sm="12" xs="12">
+                    <CardImg className="food-image" img src={chosen.image} />
+                  </Col>
+
+                  <Col className="ing-level-time-info" lg="6" sm="12" xs="12" >
+
                     <CardSubtitle  className="level" tag="h3">{chosen.level}</CardSubtitle>
                     <CardText  className="ptime" tag="h4">{chosen.prepTime}</CardText>
                     <CardText  className="ctime" tag="h4">{chosen.cookTime}</CardText>
+
                     <List className="ingredients">
                       <CardSubtitle tag="h3"><strong>Ingredients:</strong></CardSubtitle>
                       <ul className="ing-list">
                         {ingredients.map(i => <li key={i}>{i}</li>)}
                       </ul>
                     </List>
-                  </Col>
 
-                  <Col lg="6" sm="4" xs="6">
-                    <CardImg className="food-image" img src={chosen.image} />
                   </Col>
                 </Row>
 
                 <List className="method">
+
                 <CardSubtitle tag="h3"><strong>Method:</strong></CardSubtitle>
-                  <ol>
+                  <ol className="mth-list">
                     {method.map(m => <li key={m}>{m}</li>)}
                   </ol>
+
                 </List>
+
                 <Link to="/all-recipes" className="back-to-all-recipes" ><strong>Go Back to Recipes</strong></Link>
               </CardBody>
             </Card>

@@ -1,45 +1,39 @@
 .featuredRecipeCard {
-    padding-bottom: 25px;
+    padding-bottom: 2em;
     font-family: monospace;
 }
 
 .title {
-    padding-left: 75px;
-    padding-right: 100px;
     font-weight: bold;
 }
+.ing-level-time-info {
+    padding-top: 2em;
+}
 .level {
-    padding-top: 25px;
-    padding-bottom: 12px;
-    padding-left: 75px;
+    padding-bottom: 0.5em;
     text-align: left;
 }
 .ptime {
-    padding-bottom: 5px;
-    padding-left: 75px;
+    padding-bottom: 0.5em;
     text-align: left;
 }
 .ctime {
-    padding-bottom: 5px;
-    padding-left: 75px;
+    padding-bottom: 0.5em;
     text-align: left;
 }
 .ingredients {
-    padding-top: 25px;
-    padding-left: 75px;
     text-align: left;
 }
 .ing-list {
-    padding-top: 15px;
+    padding-top: 1em;
 }
 .method {
     text-align: left;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-top: 2em;
+}
+.mth-list {
+    padding-top: 1em;
 }
 .food-image {
-    height: 500px;
-    padding-right: 50px;
-    margin-top: 30px;
-    margin-bottom: 30px; 
+    padding-top: 2em;
 }
