@@ -1,5 +1,6 @@
 .allRecipeCards {
     padding-bottom: 25px;
+    font-family: monospace;
 }
 .recipe-card {
   margin-bottom: 15px; 

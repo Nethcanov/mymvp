@@ -2,8 +2,6 @@ import React from "react";
 import { Container, Row, Col, Button,  Card } from 'reactstrap';
 import {CardImg,  CardTitle } from 'reactstrap';
 import "./AllRecipes.css";
-// import { Redirect } from 'react-router-dom';
-{/* <Redirect from='/all-recipes/' to="/featured-recipe/" /> */}
 
 
 function AllRecipes(props){
@@ -17,7 +15,7 @@ function AllRecipes(props){
                 <Container className="allRecipeCards">
                 <Row className="card-rows" height= "280px">
                     {data.map(r => (
-                        <Col lg="3" sm="4" xs="6" key={r.id}>
+                        <Col lg="3" sm="4" xs="8.offset-xs-1" key={r.id}>
                             <Card className="recipe-card" > 
                                 <CardTitle className="recipe-title" tag="h6">{r.name}</CardTitle> 
                                 <CardImg className="image" img src={r.url} alt="Card image cap" alt={r.title}/>

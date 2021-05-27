@@ -34,7 +34,7 @@ function App () {
       history.push('/featured-recipe');
     }
   } 
-  // class = "navbar-nav ml-auto"
+  
   return (   
     <div className="App">
     
@@ -62,7 +62,7 @@ function App () {
 
     {/* <div className="background"></div> */}
 
-    <div className="bg "></div>
+    {/* <div className="bg "></div> */}
 
     <div className="switch">
       <Switch>
