@@ -26,8 +26,7 @@ function AllRecipes(props){
                 </Row>
                 </Container>
             : <h1>You have no recipes!</h1>
-            }
-                 
+            }      
         </div>
     )
 }

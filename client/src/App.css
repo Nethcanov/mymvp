@@ -1,5 +1,5 @@
 .App nav {
-  position:sticky;
+  position:sticky; 
   padding: 7px;
   font-size: 140%;
   margin-bottom: 1em;
@@ -13,45 +13,22 @@
 }
 
 .App {
-  
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   position: relative;
   min-height: 100vh;
-  background-image: url("https://images.unsplash.com/photo-1611090341929-28f001aab966?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTh8fGdhcmxpY3xlbnwwfDB8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60");
+  /* background-image: url("https://images.unsplash.com/photo-1611090341929-28f001aab966?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTh8fGdhcmxpY3xlbnwwfDB8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60"); */
+  background-image: url("https://i.postimg.cc/hPvr4CZB/black-garlic.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   text-align: center;
+  background-position: center center;
 }
 .switch {
   padding-bottom: 50px;
 }
 
-/* .bg {
-  /* The image used */
-  /* background-image: url("https://images.unsplash.com/photo-1611090341929-28f001aab966?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTh8fGdhcmxpY3xlbnwwfDB8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60"); */
   
-  /* Add the blur effect */
-  /* filter: blur(8px);
-  -webkit-filter: blur(8px); */
-  
-  /* Full height */
-  /* height: 100%;  */
-  
-  /* Center and scale the image nicely */
-  /* background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; 
-}*/
-/* 
-.background {
-  position: relative;
-  min-height: 100vh;
-  background-image: url("https://images.unsplash.com/photo-1611090341929-28f001aab966?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTh8fGdhcmxpY3xlbnwwfDB8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  text-align: center;
-}*/
+ 
 
 

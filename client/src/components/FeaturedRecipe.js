@@ -1,12 +1,8 @@
-// import { Button } from "bootstrap";
 import React from "react";
 import { Link } from 'react-router-dom';
-import { Container, CardBody, Card, Row, Col } from 'reactstrap';
-import { CardImg, CardText, CardSubtitle, CardHeader} from 'reactstrap';
-import { List } from 'reactstrap';
+import { Container, CardBody, Card, Row, Col, CardImg, CardText, CardSubtitle, CardHeader, List } from 'reactstrap';
 import "./FeaturedRecipe.css";
 
-// .col-auto - variable width content
 
 function FeaturedRecipe (props) {
 
@@ -58,7 +54,10 @@ function FeaturedRecipe (props) {
             </Card>
           }
         </Container>
-        : <h1 style={{ color: 'rgb(153, 133, 36)' , marginTop: 50 +"px" }}>Please Go Back to All Recipes and Choose Something to Cook</h1> 
+        : 
+        <div>
+          <Link to="/all-recipes" className="choose-a-recipe"  ><strong>Go Back and Choose a Recipe</strong></Link>
+        </div>
       }
     </div>
              

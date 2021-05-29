@@ -1,12 +1,11 @@
 import React, { useState } from "react";
-import { Route, Switch } from 'react-router-dom';
-import { Link } from 'react-router-dom';
-import DefaultRecipes from './components/DefaultRecipes';
+import { Route, Switch, Link  } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import './App.css';
+import DefaultRecipes from './components/DefaultRecipes';
 import Home from "./components/Home";
 import AllRecipes from "./components/AllRecipes";
 import FeaturedRecipe from "./components/FeaturedRecipe";
-import { useHistory } from 'react-router-dom';
 
 
 function App () {
@@ -16,9 +15,7 @@ function App () {
   const history = useHistory();
 
   const addFeaturedRecipe = (id) => {
-    // find recipe with given id
     if(recipes !== null){
-      // alert("Recipe Clicked On");// to test - works
       let recipe = recipes.filter(fr => (fr.id === id));
       let newRecipe = {
         id: recipe[0].id + "x",
@@ -59,13 +56,14 @@ function App () {
           
     </nav>
   
-
-    {/* <div className="background"></div> */}
-
-    {/* <div className="bg "></div> */}
-
     <div className="switch">
       <Switch>
+
+
+        {/* Something for Brand as takes to the background only */}
+        {/* <Route path="/" exact >
+          <Home />
+        </Route> */}
 
         <Route path="/" exact >
           <Home />
@@ -91,4 +89,3 @@ function App () {
 }
 
 export default App;
-

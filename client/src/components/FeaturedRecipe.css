@@ -2,38 +2,32 @@
     padding-bottom: 2em;
     font-family: monospace;
 }
-
 .title {
     font-weight: bold;
 }
-.ing-level-time-info {
+.ing-level-time-info,
+.food-image {
     padding-top: 2em;
 }
-.level {
-    padding-bottom: 0.5em;
-    text-align: left;
-}
-.ptime {
-    padding-bottom: 0.5em;
-    text-align: left;
-}
-.ctime {
+.level,
+.ptime,
+.ctime  {
     padding-bottom: 0.5em;
     text-align: left;
 }
 .ingredients {
     text-align: left;
 }
-.ing-list {
+.ing-list,
+.mth-list {
     padding-top: 1em;
 }
 .method {
     text-align: left;
     padding-top: 2em;
 }
-.mth-list {
-    padding-top: 1em;
-}
-.food-image {
-    padding-top: 2em;
+.choose-a-recipe {
+    background: rgba(0, 0, 0, 0.8);
+    color: rgb(153, 133, 36);
+    font-size: 20px;
 }
