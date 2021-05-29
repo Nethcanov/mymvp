@@ -49,14 +49,14 @@ function FeaturedRecipe (props) {
 
                 </List>
 
-                <Link to="/all-recipes" className="back-to-all-recipes" ><strong>Go Back to Recipes</strong></Link>
+                <Link to="/all-recipes" className="  back-to-all-recipes  " ><strong>Go Back to Recipes</strong></Link>
               </CardBody>
             </Card>
           }
         </Container>
         : 
         <div>
-          <Link to="/all-recipes" className="choose-a-recipe"  ><strong>Go Back and Choose a Recipe</strong></Link>
+          <Link to="/all-recipes" className="choose-a-recipe"  ><strong>  Go Back and Choose a Recipe  </strong></Link>
         </div>
       }
     </div>

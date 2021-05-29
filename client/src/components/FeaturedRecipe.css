@@ -26,6 +26,7 @@
     text-align: left;
     padding-top: 2em;
 }
+.back-to-all-recipes, 
 .choose-a-recipe {
     background: rgba(0, 0, 0, 0.8);
     color: rgb(153, 133, 36);
