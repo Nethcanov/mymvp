@@ -1,5 +1,7 @@
 .App nav {
-  position:sticky; 
+  position: sticky; 
+  z-index: 9999;
+  top: 0px;
   padding: 7px;
   font-size: 140%;
   margin-bottom: 1em;
