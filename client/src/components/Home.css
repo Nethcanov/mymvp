@@ -1,5 +1,8 @@
 .headingContainer {
     background: rgba(0, 0, 0, 0.5);
+    min-height: 100vh;
+    min-width: 100vw;
+  
 }
 .heading {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;

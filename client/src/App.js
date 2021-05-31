@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Route, Switch, Link  } from 'react-router-dom';
 import { useHistory } from 'react-router-dom';
+
 import './App.css';
 import DefaultRecipes from './components/DefaultRecipes';
 import Home from "./components/Home";
@@ -34,10 +35,10 @@ function App () {
   
   return (   
     <div className="App">
-    
-    <nav className="navbar navbar-expand-sm navbar-dark" style={{ backgroundColor: 'rgb(153, 133, 36)', position: "sticky" }}>
+      {/* Navbar    */}
+      <nav className="navbar navbar-expand-sm navbar-dark">
         {/* "Brand"/Logo */}
-        <a className="navbar-brand" href="brand"><strong>Food!</strong></a>
+        <Link className="navbar-brand" to="/"><strong>Food!</strong></Link>
        
 
         {/* Hamburger Icon */}
@@ -48,41 +49,43 @@ function App () {
         {   /* Menu Items */}
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div className="navbar-nav ml-auto">
-            <Link className="nav-link" to="/">Home <span className="sr-only">(current)</span></Link>
-            <Link className="nav-link" to="/all-recipes/">All Recipes</Link>
-            <Link className="nav-link" to="/featured-recipe">Ingredients and Method</Link>
+              <Link className="nav-link" to="/">Home <span className="sr-only">(current)</span></Link>
+              <Link className="nav-link" to="/all-recipes/">All Recipes</Link>
+              <Link className="nav-link" to="/featured-recipe">Ingredients and Method</Link>
             </div>
         </div>
-          
-    </nav>
-  
-    <div className="switch">
-      <Switch>
+      </nav>
 
+      {/* Routes */}
+      <div className="switch">
 
-        {/* Something for Brand as takes to the background only */}
-        {/* <Route path="/" exact >
-          <Home />
-        </Route> */}
+        <Switch>
 
-        <Route path="/" exact >
-          <Home />
-        </Route>
-      
-        <Route path="/all-recipes" >
-          {recipes && <AllRecipes data={recipes} getRecipeCb={(recipe) => addFeaturedRecipe(recipe)} />}
-        </Route>
+          <Route path="/" exact >
+            <Home />
+          </Route>
+        
+          <Route path="/all-recipes" >
+            {recipes && <AllRecipes data={recipes} getRecipeCb={(recipe) => addFeaturedRecipe(recipe)} />}
+          </Route>
 
-        <Route path="/featured-recipe" >
-          {chosenRecipe && <FeaturedRecipe recipeData={chosenRecipe}/>}
-        </Route>
+          <Route path="/featured-recipe" >
+            {chosenRecipe && <FeaturedRecipe recipeData={chosenRecipe}/>}
+          </Route>
       
         </Switch>
+
       </div>
-      <footer className="footer text-center p-3 mt-3 text-light" style={{ backgroundColor: 'rgb(189, 185, 175)' }} >
-        Original Concept by Paulina Brozek Modified by Jacosta von Achten
-      </footer>
-    
+
+      {/* Footer */}
+      <div className="footer">
+
+        <footer className="footer text-center p-3 mt-3 text-light" style={{ backgroundColor: 'rgb(189, 185, 175)' }} >
+          Original Concept by Paulina Brozek Modified by Jacosta von Achten
+        </footer>
+
+      </div>
+
     </div>
   )
             

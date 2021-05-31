@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 import { Container, CardBody, Card, Row, Col, CardImg, CardText, CardSubtitle, CardHeader, List } from 'reactstrap';
+
 import "./FeaturedRecipe.css";
 
 
@@ -16,8 +17,11 @@ function FeaturedRecipe (props) {
         <Container className="featuredRecipeCard">
           {
             <Card width="" height="">
+
               <CardBody key={chosen.id}>
+
                 <CardHeader className="title" tag="h1">{chosen.title}</CardHeader>
+                
                 <Row>
 
                   <Col className="image-col" lg="6" sm="12" xs="12">
@@ -32,25 +36,28 @@ function FeaturedRecipe (props) {
 
                     <List className="ingredients">
                       <CardSubtitle tag="h3"><strong>Ingredients:</strong></CardSubtitle>
-                      <ul className="ing-list">
-                        {ingredients.map(i => <li key={i}>{i}</li>)}
-                      </ul>
+                        <ul className="ing-list">
+                          {ingredients.map(i => <li key={i}>{i}</li>)}
+                        </ul>
                     </List>
 
                   </Col>
+
                 </Row>
 
                 <List className="method">
 
-                <CardSubtitle tag="h3"><strong>Method:</strong></CardSubtitle>
-                  <ol className="mth-list">
-                    {method.map(m => <li key={m}>{m}</li>)}
-                  </ol>
+                  <CardSubtitle tag="h3"><strong>Method:</strong></CardSubtitle>
+                    <ol className="mth-list">
+                      {method.map(m => <li key={m}>{m}</li>)}
+                    </ol>
 
                 </List>
 
-                <Link to="/all-recipes" className="  back-to-all-recipes  " ><strong>Go Back to Recipes</strong></Link>
+                <Link to="/all-recipes" className="back-to-all-recipes" ><strong>Go Back to Recipes</strong></Link>
+
               </CardBody>
+
             </Card>
           }
         </Container>
